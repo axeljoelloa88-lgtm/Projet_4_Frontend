@@ -771,7 +771,7 @@
                 if (film.imgPath && film.imgPath.includes('themoviedb.org')) {
                     imageContent = `
                         <div class="film-image">
-                            <img src="${API_URL}/proxy-image?url=${encodeURIComponent(film.imgPath)}" 
+                            <img src="${film.imgPath}}" 
                                  alt="${film.title}" 
                                  onerror="this.onerror=null; this.style.display='none'; this.parentNode.innerHTML='${fallbackImage.replace(/'/g, "\\'").replace(/\n/g, '')}'">
                         </div>
