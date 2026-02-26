@@ -771,7 +771,7 @@
                 if (film.imgPath) {
                     imageContent = `
                         <div class="film-image">
-                            <img src="${film.imgPath}}" 
+                            <img src="${film.imgPath}" 
                                  alt="${film.title}" 
                                  onerror="this.onerror=null; this.style.display='none'; this.parentNode.innerHTML='${fallbackImage.replace(/'/g, "\\'").replace(/\n/g, '')}'">
                         </div>
