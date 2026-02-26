@@ -768,7 +768,7 @@
 
                 // Image avec proxy TMDB
                 let imageContent = '';
-                if (film.imgPath && film.imgPath.includes('themoviedb.org')) {
+                if (film.imgPath) {
                     imageContent = `
                         <div class="film-image">
                             <img src="${film.imgPath}}" 
