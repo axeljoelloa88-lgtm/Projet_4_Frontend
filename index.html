@@ -769,10 +769,10 @@
                 // Image avec proxy TMDB
                 let imageContent = '';
                 console.log(film);
-                if (film.imgPath) {
+                if (film.imgpath) {
                     imageContent = `
                         <div class="film-image">
-                            <img src="${film.imgPath}" 
+                            <img src="${film.imgpath}" 
                                  alt="${film.title}" 
                                  onerror="this.onerror=null; this.style.display='none'; this.parentNode.innerHTML='${fallbackImage.replace(/'/g, "\\'").replace(/\n/g, '')}'">
                         </div>
